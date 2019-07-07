@@ -1,0 +1,28 @@
+{
+  "name": "toxin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.pug",
+  "scripts": {
+    "start": "parcel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frostydrop/toxin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frostydrop/toxin/issues"
+  },
+  "homepage": "https://github.com/Frostydrop/toxin#readme",
+  "dependencies": {
+    "parcel": "^1.12.3"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "sass": "^1.22.3"
+  }
+}

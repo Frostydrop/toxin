@@ -1,4 +1,4 @@
-node_modules
+node_modules_global
 build
 dist
 npm-debug.log
@@ -6,3 +6,4 @@ npm-debug.log
 .DS_Store
 .vscode
 .cache
+node_modules

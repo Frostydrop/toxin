@@ -1,0 +1,66 @@
+@function tint($color, $percentage)
+    @return mix(white, $color, $percentage)
+
+$color-1: #1F2041
+$color-2: tint($color-1, 25)
+$color-3: tint($color-1, 50)
+$color-4: tint($color-1, 75)
+$color-5: tint($color-1, 95)
+$color-6: #BC9CFF
+$color-7: #6FCF97
+
+.colors
+    display: flex
+    flex-direction: column
+    list-style-type: none
+    margin-left: 142px
+    margin-top: 145px
+    padding-left: 0
+
+.rectangle_item
+    width: 70px
+    height: 70px
+    border-radius: 6px
+    float: left
+    margin-right: 40px
+    margin-bottom: 20px
+    padding-left: 0
+   
+.rectangle__dark100
+   background-color: $color-1
+
+.rectangle__dark75
+    background-color: $color-2
+
+.rectangle__dark50
+    background-color: $color-3
+
+.rectangle__dark25
+    background-color: $color-4
+
+.rectangle__dark5
+    background-color: $color-5
+
+.rectangle__purple
+    background-color: $color-6
+
+.rectangle__green
+    background-color: $color-7
+
+.color-name
+    color: $color-1
+    font-family: 'QuickSand'
+    font-weight: bold
+    font-size: 19px
+    line-height: 39px
+    display: flex
+    align-items: center
+
+.color-code
+    color: $color-1
+    font-family: 'QuickSand'
+    font-weight: normal
+    font-size: 19px
+    line-height: 28px
+    display: flex
+    align-items: center
