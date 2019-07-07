@@ -1,2 +1,48 @@
-@import "/uikit/colors_and_type.sass"
+/*Переменные цветов*/
+@function tint($color, $percentage)
+    @return mix(white, $color, $percentage)
+
+$color-1: #1F2041
+$color-2: tint($color-1, 25)
+$color-3: tint($color-1, 50)
+$color-4: tint($color-1, 75)
+$color-5: tint($color-1, 95)
+$color-6: #BC9CFF
+$color-7: #6FCF97
+
+/*Переменные шрифтов*/
+@mixin h1-text
+    font-family: 'Quicksand'
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    color: $color-1
+
+@mixin h2-text
+    font-family: 'Quicksand'
+    font-style: normal
+    font-weight: bold
+    font-size: 19px
+    line-height: 24px
+    color: $color-1
+
+@mixin h3-text
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $color-1
+
+@mixin body-text
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    color: $color-2
+
+/*Подключение стилей*/
 @import "/fonts/fonts.css"
+@import "/uikit/colors_and_type.sass"

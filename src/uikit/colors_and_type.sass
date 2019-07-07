@@ -1,28 +1,17 @@
-@function tint($color, $percentage)
-    @return mix(white, $color, $percentage)
-
-$color-1: #1F2041
-$color-2: tint($color-1, 25)
-$color-3: tint($color-1, 50)
-$color-4: tint($color-1, 75)
-$color-5: tint($color-1, 95)
-$color-6: #BC9CFF
-$color-7: #6FCF97
-
 .logo
     position: absolute
     height: 48px
     width: 48px
-    margin-top: 22px
-    margin-left: 22px
+    top: 22px
+    left: 22px
 
 .colors
     position: absolute
     display: flex
     flex-direction: column
     list-style-type: none
-    margin-left: 142px
-    margin-top: 137px
+    left: 142px
+    top: 137px
     padding-left: 0
 
 .rectangle_item
@@ -72,3 +61,32 @@ $color-7: #6FCF97
     line-height: 28px
     display: flex
     align-items: center
+
+.fonts
+    position: absolute
+    display: flex
+    flex-direction: column
+    list-style-type: none
+    width: 403px
+    left: auto
+    right: 191px
+    top: 137px
+
+.font-name
+    display: inline-block
+
+.font-description
+    display: inline-block
+    margin-left: 30px
+
+.font-description-h1
+    +h1-text
+
+.font-description-h2
+    +h2-text
+
+.font-description-h3
+    +h3-text
+
+.font-description-body
+    +body-text
