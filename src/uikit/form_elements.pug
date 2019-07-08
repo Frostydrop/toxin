@@ -1,0 +1,19 @@
+include ../components/text_field/text_field
+
+html
+    head
+        title
+        link(rel="stylesheet", href="/style.sass")
+    body
+        .logo
+            img(src="../icons/logo.svg")
+        .text-field-default
+            p.text-field-title='TEXT FIELD'
+            p.text-field-status='DEFAULT'
+            +text-field({
+                name: 'email',
+                type: 'email', 
+                placeholder: 'Email',
+                content: '',
+                pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
+            })
