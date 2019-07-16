@@ -1,4 +1,6 @@
 @import "../components/text_field/text_field.sass"
+@import "../components/dropdown/dropdown.sass"
+@import "../components/checkbox_buttons/checkbox_buttons.sass"
 
 .text-field-default
     position: absolute
@@ -6,11 +8,46 @@
     left: 141px
     +h3-text
 
-.text-field-status
+.text-field-hover
+    position: absolute
+    top: 227px
+    left: 141px
+    +h3-text
+
+.text-field-status,
+.text-field-hover-status,
+.dropdown-status
     display: inline-block
     color: $color-3
     font-weight: normal
     float: right
+    margin-top: 0px
+    margin-bottom: 5px
     
-.text-field-title
+.text-field-title,
+.text-field-hover-title,
+.dropdown-title,
+.checkbox-form-title
     display: inline-block
+    margin-top: 0px
+    margin-bottom: 5px
+
+.text-field-wrap
+    color: $color-2
+    border-color: $color-2
+
+.dropdown-menu
+    position: absolute
+    top: 311px
+    left: 141px
+    +h3-text
+
+.checkbox-form
+    position: absolute
+    top: 143px
+    left: 587px
+    +h3-text
+
+.checkbox-form-inner
+    display: flex
+    flex-direction: column

@@ -1,4 +1,6 @@
 include ../components/text_field/text_field
+include ../components/dropdown/dropdown
+include ../components/checkbox_buttons/checkbox_buttons
 
 html
     head
@@ -17,3 +19,45 @@ html
                 content: '',
                 pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
             })
+        .text-field-hover
+            p.text-field-hover-title='TEXT FIELD'
+            p.text-field-hover-status='HOVER / FOCUS'
+            +text-field({
+                name: 'input-text',
+                type: 'text', 
+                placeholder: '',
+                content: 'This is pretty awesome',
+                pattern: ''
+            })
+        .dropdown-menu
+            p.dropdown-title='DROPDOWN'
+            p.dropdown-status='DEFAULT'
+            +dropdown({
+                name: 'dropdown-menu',
+                type: 'text',
+                content: 'Сколько гостей'
+            })
+        .checkbox-form
+            p.checkbox-form-title='CHECKBOX BUTTONS'
+            .checkbox-form-inner
+                +checkbox({
+                    name: 'checkbox-button-1',
+                    type: 'checkbox',
+                    value: 'smoke',
+                    content: 'Можно курить'
+                }) 
+                +checkbox({
+                    name: 'checkbox-button-2',
+                    type: 'checkbox',
+                    value: 'pets',
+                    content: 'Можно с питомцами',
+                    checked: ''
+                })
+                +checkbox({
+                    name: 'checkbox-button-3',
+                    type: 'checkbox',
+                    value: 'guests',
+                    content: 'Можно пригласить гостей <br>(до 10 человек)',
+                    checked: ''
+                })
+            

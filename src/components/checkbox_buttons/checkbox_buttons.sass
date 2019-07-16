@@ -1,0 +1,44 @@
+.checkbox-content
+    +body-text
+    //position: absolute
+    display: inline-block
+    padding-left: 30px
+    vertical-align: middle
+    
+
+.checkbox-wrap
+    position: relative
+    cursor: pointer
+    margin-top: 10px
+    
+
+.checkbox
+    display: none
+
+
+.checkbox-content::before
+    content: ''
+    display: block
+    position: absolute
+    width: 20px
+    height: 20px
+    box-sizing: border-box
+    border: 1px solid $color-4
+    border-radius: 4px
+    left: 0
+    top: 0
+
+.checkbox:checked + .checkbox-content::before
+    //content: ''
+    //display: block
+    //position: absolute
+    // width: 20px
+    // height: 20px
+    // box-sizing: border-box
+    // border: 1px solid $color-4
+    // border-radius: 4px
+    background-image: url(./icons/checkbox_check.svg)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    //left: 0
+    //top: 0

@@ -1,0 +1,43 @@
+.dropdown-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 44px
+    width: 320px
+    border: 1px solid $color-4
+    border-radius: 4px
+    background: transparent
+
+.dropdown
+    +body-text
+    padding-left: 15px
+    outline: none
+    border: none
+
+.dropdown-arrow
+    padding-right: 13px
+    color: $color-3
+    
+.dropdown::-webkit-input-placeholder
+    color: $color-4
+
+.dropdown::-moz-placeholder
+    color: $color-4
+
+.dropdown:hover::-webkit-input-placeholder
+    color: $color-2
+
+.dropdown:focus::-webkit-input-placeholder
+    color: $color-2
+
+.dropdown-wrap:hover,
+.dropdown-arrow:hover
+    color: $color-2
+    border-color: $color-3
+
+.dropdown-wrap:focus,
+.dropdown-arrow:focus
+    color: $color-2
+    border-color: $color-3
+    outline: none
+    background: none
