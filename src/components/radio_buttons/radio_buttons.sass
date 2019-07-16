@@ -1,0 +1,56 @@
+.radio-button-content
+    +body-text
+    color: $color-3
+    line-height: 20px
+    display: inline-block
+    vertical-align: middle
+    padding-left: 30px
+
+.radio-button-wrap
+    position: relative
+    cursor: pointer
+    margin-top: 10px
+
+.radio-button
+    display: none
+
+.radio-button-content::before
+    content: ''
+    display: block
+    position: absolute
+    width: 20px
+    height: 20px
+    box-sizing: border-box
+    border: 1px solid $color-4
+    border-radius: 10px
+    left: 0
+    top: 0 
+
+.radio-button:checked + .radio-button-content::before
+    position: absolute
+    width: 20px
+    height: 20px
+    border-radius: 10px
+    border: 1px solid $color-6
+    left: 0
+    top: 0 
+    background: transparent
+    z-index: 1
+    
+    
+.radio-button:checked + .radio-button-content::after
+    content: ''
+    display: block
+    position: absolute
+    box-sizing: border-box
+    width: 20px
+    height: 20px
+    border-radius: 10px
+    border: 4px solid white
+    background: linear-gradient(180deg, $color-6 0%, $color-8 100%)
+    left: 0
+    top: 0 
+    
+
+.radio-button:checked + .radio-button-content
+    color: $color-2

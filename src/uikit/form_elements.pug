@@ -1,6 +1,7 @@
 include ../components/text_field/text_field
 include ../components/dropdown/dropdown
 include ../components/checkbox_buttons/checkbox_buttons
+include ../components/radio_buttons/radio_buttons
 
 html
     head
@@ -59,5 +60,21 @@ html
                     value: 'guests',
                     content: 'Можно пригласить гостей (до 10 человек)',
                     checked: ''
+                })
+        .radio-button-form
+            p.radio-button-form-title='RADIO BUTTONS'
+            .radio-button-form-inner
+                +radio-button({
+                    name: 'radio-button-sex',
+                    type: 'radio',
+                    value: 'man',
+                    content: 'Мужчина',
+                    checked: ''
+                }) 
+                +radio-button({
+                    name: 'radio-button-sex',
+                    type: 'radio',
+                    value: 'woman',
+                    content: 'Женщина'
                 })
             
