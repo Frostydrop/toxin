@@ -2,6 +2,7 @@ include ../components/text_field/text_field
 include ../components/dropdown/dropdown
 include ../components/checkbox_buttons/checkbox_buttons
 include ../components/radio_buttons/radio_buttons
+include ../components/toggle/toggle
 
 html
     head
@@ -76,5 +77,21 @@ html
                     type: 'radio',
                     value: 'female',
                     content: 'Женщина'
+                })
+        .toggle-form
+            p.toggle-form-title='TOGGLE'
+            .toggle-form-inner
+                +toggle({
+                    name: 'offer-1',
+                    type: 'checkbox',
+                    value: 'get special offers',
+                    content: 'Получать спецпредложения',
+                    checked: ''
+                }) 
+                +toggle({
+                    name: 'offer-2',
+                    type: 'checkbox',
+                    value: 'get special offers',
+                    content: 'Получать спецпредложения'
                 })
             

@@ -1,0 +1,4 @@
+mixin toggle(object)
+    label.toggle-wrap
+        input.toggle(name=object.name type=object.type value=object.value checked=object.checked)
+        .toggle-content=object.content

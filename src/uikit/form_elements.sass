@@ -2,6 +2,7 @@
 @import "../components/dropdown/dropdown.sass"
 @import "../components/checkbox_buttons/checkbox_buttons.sass"
 @import "../components/radio_buttons/radio_buttons.sass"
+@import "../components/toggle/toggle.sass"
 
 .text-field-default
     position: absolute
@@ -28,7 +29,8 @@
 .text-field-title,
 .text-field-hover-title,
 .dropdown-title,
-.radio-button-form-title
+.radio-button-form-title,
+.toggle-form-title
     display: inline-block
     margin-top: 0px
     margin-bottom: 5px
@@ -69,3 +71,13 @@
     flex-direction: row
     justify-content: space-between
     width: 222px
+
+.toggle-form
+    position: absolute
+    top: 401px
+    left: 587px
+    +h3-text
+
+.toggle-form-inner
+    display: flex
+    flex-direction: column
