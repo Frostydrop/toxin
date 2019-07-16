@@ -1,4 +1,4 @@
 mixin checkbox(object)
     label.checkbox-wrap
         input.checkbox(name=object.name type=object.type value=object.value checked=object.checked)
-        .checkbox-content!=object.content
+        .checkbox-content=object.content
