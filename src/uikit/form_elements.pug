@@ -3,6 +3,7 @@ include ../components/dropdown/dropdown
 include ../components/checkbox_buttons/checkbox_buttons
 include ../components/radio_buttons/radio_buttons
 include ../components/toggle/toggle
+include ../components/like_button/like_button
 
 html
     head
@@ -93,5 +94,17 @@ html
                     type: 'checkbox',
                     value: 'get special offers',
                     content: 'Получать спецпредложения'
+                })
+        .like-button-form
+            p.like-button-form-title='LIKE BUTTON'
+            .like-button-form-inner
+                +like-button({
+                    name: 'like-1',
+                    value: '2'  
+                }) 
+                +like-button({
+                    name: 'like-2',
+                    value: '12',
+                    checked: ''
                 })
             

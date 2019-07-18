@@ -3,6 +3,7 @@
 @import "../components/checkbox_buttons/checkbox_buttons.sass"
 @import "../components/radio_buttons/radio_buttons.sass"
 @import "../components/toggle/toggle.sass"
+@import "../components/like_button/like_button.sass"
 
 .text-field-default
     position: absolute
@@ -30,7 +31,8 @@
 .text-field-hover-title,
 .dropdown-title,
 .radio-button-form-title,
-.toggle-form-title
+.toggle-form-title,
+.like-button-form-title
     display: inline-block
     margin-top: 0px
     margin-bottom: 5px
@@ -81,3 +83,15 @@
 .toggle-form-inner
     display: flex
     flex-direction: column
+
+.like-button-form
+    position: absolute
+    top: 531px
+    left: 587px
+    +h3-text
+
+.like-button-form-inner
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 90px
